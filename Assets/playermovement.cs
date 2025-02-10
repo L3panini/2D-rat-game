@@ -7,6 +7,8 @@ public class playermovement : MonoBehaviour
     public float jump;
     private Rigidbody2D rb;
     public bool isGrounded;
+    public GameObject RatStanding;
+    public GameObject RatCrouching;
 
     void Awake()
     {
@@ -24,6 +26,16 @@ public class playermovement : MonoBehaviour
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.AddForce(Vector2.up * jump);
+        }
+        if(Input.GetKeyDown(KeyCode.DownArrow) && isGrounded)
+        {
+            RatStanding.SetActive(false);
+            RatCrouching.SetActive(true);
+        }
+        if (Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            RatStanding.SetActive(true);
+            RatCrouching.SetActive(false);
         }
     }
 
