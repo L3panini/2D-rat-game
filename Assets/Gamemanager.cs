@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Gamemanager : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class Gamemanager : MonoBehaviour
     public float timeBetweenSpawns;
 
     public float speedMultiplier;
+    private float distance;
+
+    public Text distanceUI;
     // start is called before the first frame update
     void Start()
     {
@@ -19,7 +23,11 @@ public class Gamemanager : MonoBehaviour
     // update is called once per frame
     void Update()
     {
+
+        distanceUI.text = "Distance: " + distance.ToString("F2");
         speedMultiplier += Time.deltaTime * 0.1f;
+
+        distance += Time.deltaTime * 0.8f;
 
         timer += Time.deltaTime;
 
