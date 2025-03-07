@@ -563,7 +563,7 @@ Transform:
   m_GameObject: {fileID: 678906630}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.24, y: -1.37, z: -0.046594936}
+  m_LocalPosition: {x: 8.24, y: -1.87, z: -0.046594936}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -812,10 +812,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1570940589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 302, y: -18}
-  m_SizeDelta: {x: -942, y: -476}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -166, y: -14}
+  m_SizeDelta: {x: 70, y: 127}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1152036093
 MonoBehaviour:
@@ -1130,8 +1130,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.8877869, y: 0.8170404}
-  m_Size: {x: 1.2482294, y: 3.911329}
+  m_Offset: {x: -0.8877869, y: 0.5198032}
+  m_Size: {x: 1.2482294, y: 3.3168542}
   m_Direction: 0
 --- !u!1 &1535331272
 GameObject:
@@ -1158,7 +1158,7 @@ Transform:
   m_GameObject: {fileID: 1535331272}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.21, y: 0.09, z: -0.046594936}
+  m_LocalPosition: {x: 8.21, y: -0.29, z: -0.046594936}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1297,13 +1297,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a49def64147ae4d43924561b9ecc65ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnObject: {fileID: 5193503451100742828, guid: d2e7da97bdf094f45b1170c9272efefd, type: 3}
+  spawnObject: {fileID: 7652349393433924578, guid: a63647a12439e6048965f4dbdaf243bd, type: 3}
   spawnPoints:
   - {fileID: 678906630}
   - {fileID: 1535331272}
   - {fileID: 1215071264}
   timer: 0
-  timeBetweenSpawns: -0.1
+  timeBetweenSpawns: -0.2
   speedMultiplier: 6
   distanceUI: {fileID: 1152036093}
 --- !u!4 &1881443949
